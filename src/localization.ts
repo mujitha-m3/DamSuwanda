@@ -4,7 +4,7 @@
 const strings: Record<string, Record<string, string>> = {
   // ── App-wide ──
   app_name: { si: 'දම් සුවඳ', en: 'Dam Suvanda' },
-  tagline: { si: 'ධර්මයේ සුවඳ', en: 'The Fragrance of Dhamma' },
+  tagline: { si: 'දහමේ සුවඳ ඔබේ හදවතට', en: 'The Fragrance of Dhamma to your heart' },
 
   // ── Language selection ──
   select_language: { si: 'භාෂාව තෝරන්න', en: 'Select Language' },
@@ -63,7 +63,9 @@ const strings: Record<string, Record<string, string>> = {
   delete_confirm: { si: 'මෙම ගොනුව මකා දැමීමට අවශ්‍යද?', en: 'Delete this file?' },
 
   // ── Settings ──
+  theme: { si: 'තේමාව', en: 'Theme' },
   change_language: { si: 'භාෂාව වෙනස් කරන්න', en: 'Change Language' },
+  text_size: { si: 'අකුරු ප්‍රමාණය', en: 'Text Size' },
   notifications: { si: 'දැනුම්දීම්', en: 'Notifications' },
   about: { si: 'යෙදුම ගැන', en: 'About' },
   version: { si: 'අනුවාදය', en: 'Version' },

@@ -15,6 +15,7 @@ export interface Pirith {
   audioUrl: string;
   imageUrl?: string;
   lines: TimestampedLine[];
+  group?: string;
 }
 
 export interface Vandana {
@@ -24,7 +25,7 @@ export interface Vandana {
   textSi: string;
   textEn: string;
   audioUrl?: string;
-  category: 'morning' | 'noon' | 'evening' | 'devotional';
+  category: string;
 }
 
 export interface Sermon {

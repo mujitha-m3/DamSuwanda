@@ -1,125 +1,150 @@
 import { Pirith, Vandana, DhammaQuote, PoyaDay, Sermon } from '../types';
 
 export const samplePirithList: Pirith[] = [
+  // ── පිරිත් පේ කිරීම (Pirith Pe Kirima) ──
   {
-    id: 'karaniya_metta',
-    titleSi: 'කරණීය මෙත්ත සූත්‍රය',
-    titleEn: 'Karaniya Metta Sutta',
-    descriptionSi: 'මෛත්‍රී භාවනාව පිළිබඳ බුදුරදුන්ගේ දේශනාව',
-    descriptionEn: "The Buddha's discourse on loving-kindness meditation",
-    audioUrl: 'https://example.com/audio/karaniya_metta.mp3',
-    lines: [
-      { timestampMs: 0, textSi: 'කරණීයමත්ථ කුසලේන', textEn: 'Karanīyam attha kusalena' },
-      { timestampMs: 4000, textSi: 'යං තං සන්තං පදං අභිසමේච්ච', textEn: 'Yan tam santam padam abhisamecca' },
-      { timestampMs: 8000, textSi: 'සක්කෝ උජූ ච සූජූ ච', textEn: 'Sakko ujū ca sūjū ca' },
-      { timestampMs: 12000, textSi: 'සුවචෝ චස්ස මුදු අනතිමානි', textEn: 'Suvaco cassa mudu anatimānī' },
-      { timestampMs: 16000, textSi: 'සන්තුස්සකෝ ච සුභරෝ ච', textEn: 'Santussako ca subharo ca' },
-      { timestampMs: 20000, textSi: 'අප්පකිච්චෝ ච සල්ලහුකවුත්ති', textEn: 'Appakicco ca sallahukavutti' },
-      { timestampMs: 24000, textSi: 'සන්තින්ද්‍රියෝ ච නිපකෝ ච', textEn: 'Santindriyo ca nipako ca' },
-      { timestampMs: 28000, textSi: 'අප්පගබ්භෝ කුලේසු අනනුගිද්ධෝ', textEn: 'Appagabbho kulesu ananugiddho' },
-    ],
-  },
-  {
-    id: 'mangala_sutta',
-    titleSi: 'මංගල සූත්‍රය',
-    titleEn: 'Mangala Sutta',
-    descriptionSi: 'උතුම් මංගල දේශනාව',
-    descriptionEn: 'The Discourse on Blessings',
-    audioUrl: 'https://example.com/audio/mangala_sutta.mp3',
-    lines: [
-      { timestampMs: 0, textSi: 'බහූ දේවා මනුස්සා ච', textEn: 'Bahū devā manussā ca' },
-      { timestampMs: 4000, textSi: 'මංගලානි අචින්තයුං', textEn: 'Mangalāni acintayum' },
-      { timestampMs: 8000, textSi: 'ආකංඛමානා සෝත්ථානං', textEn: 'Ākankhamānā sotthānam' },
-      { timestampMs: 12000, textSi: 'බ්‍රූහි මංගලමුත්තමං', textEn: 'Brūhi mangalam uttamam' },
-    ],
-  },
-  {
-    id: 'rathana_sutta',
-    titleSi: 'රතන සූත්‍රය',
-    titleEn: 'Rathana Sutta',
-    descriptionSi: 'ත්‍රිවිධ රත්නයේ ගුණ දේශනාව',
-    descriptionEn: 'The Discourse on the Jewels',
-    audioUrl: 'https://www.dropbox.com/scl/fi/goj3us3viptw4pr3sc61w/Rathana-Suthraya.mp3?rlkey=167tz2yef4mky6tai0kt23sgp&st=zijhzz9u&dl=1',
-    lines: [
-      { timestampMs: 0, textSi: 'යානීධ භූතානි සමාගතානි', textEn: 'Yānīdha bhūtāni samāgatāni' },
-      { timestampMs: 6000, textSi: 'භුම්මානි වා යානි ච අන්තලික්ඛේ', textEn: 'Bhummāni vā yāni ca antalikkhe' },
-      { timestampMs: 12000, textSi: 'සබ්බේව භූතා සුමනා භවන්තු', textEn: 'Sabbeva bhūtā sumanā bhavantu' },
-      { timestampMs: 18000, textSi: 'අථෝපි සක්කච්ච සුණන්තු භාසිතං', textEn: 'Athopi sakkacca suṇantu bhāsitam' },
-      { timestampMs: 24000, textSi: 'යං කිඤ්චි විත්තං ඉධ වා හුරං වා', textEn: 'Yam kiñci vittam idha vā huram vā' },
-      { timestampMs: 30000, textSi: 'සග්ගේසු වා යං රතනං පණීතං', textEn: 'Saggesu vā yam ratanam paṇītam' },
-      { timestampMs: 36000, textSi: 'න නෝ සමං අත්ථි තථාගතේන', textEn: 'Na no samam atthi tathāgatena' },
-      { timestampMs: 42000, textSi: 'ඉදම්පි බුද්ධේ රතනං පණීතං', textEn: 'Idampi Buddhe ratanam paṇītam' },
-      { timestampMs: 48000, textSi: 'ඒතේන සච්චේන සුවත්ථි හෝතු', textEn: 'Etena saccena suvatthi hotu' },
-    ],
-  },
-  {
-    id: 'jayamangala_gatha',
-    titleSi: 'ජයමංගල ගාථා',
-    titleEn: 'Jayamangala Gatha',
-    descriptionSi: 'ජයමංගල අටගාථා',
-    descriptionEn: 'The Eight Verses of Victory',
-    audioUrl: 'https://example.com/audio/jayamangala.mp3',
+    id: 'pe_kirima_mahamevnawa',
+    titleSi: 'පිරිත් පේ කිරීම - මහමෙව්නාවේ පාළි - සිංහල පිරිත් සජ්ඣායනය',
+    titleEn: 'Pirith Pe Kirima - Mahamevnawa',
+    group: 'pe_kirima',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/tb0yu577t9ektylxtya6f/01..mp3?rlkey=61v1zrhog1dpqvplwavrlz4qi&st=xx0e5q8v',
     lines: [],
+  },
+
+  // ── මහ පිරිත (Maha Piritha) ──
+  {
+    id: 'maha_piritha_mahamevnawa',
+    titleSi: 'මහ පිරිත - මහමෙව්නාවේ පාළි - සිංහල පිරිත් සජ්ඣායනය',
+    titleEn: 'Maha Piritha - Mahamevnawa',
+    group: 'maha_piritha',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/qf30hg9ec8166krldacnb/02..mp3?rlkey=bp1hkl6t3j0644h6qs6ze5ile&st=3ibqg98w',
+    lines: [],
+  },
+
+  // ── පළමුවෙනි බණවර (First Banavara) ──
+  {
+    id: 'khandha_piritha', titleSi: 'ඛන්ධ පිරිත', titleEn: 'Khandha Piritha', group: 'palamuveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/279n207b5bgz8so2mtig1/03..mp3?rlkey=nn57rbw135qz27ps5epwcdt0e&st=6mvmff0o', lines: [],
+  },
+  {
+    id: 'mettanisamsa_sutta', titleSi: 'මෙත්තානිසංස සූත්‍රය', titleEn: 'Mettanisamsa Sutta', group: 'palamuveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/fksx035ow2bilp6radqfs/04..mp3?rlkey=q70pt7jw00rjsp4lvsjxtvw4d&st=apz0m7h4', lines: [],
   },
   {
     id: 'mora_piritha',
-    titleSi: 'මෝර පිරිත',
-    titleEn: 'Mora Piritha',
-    descriptionSi: 'සුරක්ෂිතතාව සඳහා මෝර පිරිත',
-    descriptionEn: 'The Peacock Protection Chant',
-    audioUrl: 'https://www.dropbox.com/scl/fi/lfxnvu39qgke5xjwcjnta/mora_piritha.mp3?rlkey=xdxj563b06npae3pimv0nbj0z&st=hrmh784a&dl=1',
+    titleSi: 'මෝර පිරිත', titleEn: 'Mora Piritha', group: 'palamuveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/fksx035ow2bilp6radqfs/04..mp3?rlkey=q70pt7jw00rjsp4lvsjxtvw4d&st=gql4gi7s',
     lines: [
       { timestampMs: 0, textSi: 'උදේතයං චක්ඛුමා ඒකරාජා\nහරිස්සවණ්ණෝ පඨවිප්පභාසෝ', textEn: 'Udetayam cakkhumā ekarājā\nHarissavaṇṇo paṭhavippabhāso' },
       { timestampMs: 8000, textSi: 'තං තං නමස්සාමි හරිස්සවණ්ණං පඨවිප්පභාසං\nතයජ්ජ ගුත්තා විහරේමු දිවසං', textEn: 'Tam tam namassāmi harissavaṇṇam paṭhavippabhāsam\nTayajja guttā viharemu divasam' },
       { timestampMs: 32000, textSi: 'යේ බ්‍රාහ්මණා වේදගූ සබ්බධම්මේ\nතේ මේ නමෝ තේ ච මං පාලයන්තූ', textEn: 'Ye brāhmaṇā vedagū sabbadhamme\nTe me namo te ca mam pālayantu' },
       { timestampMs: 40000, textSi: 'නමත්ථු බුද්ධානං නමත්ථු බෝධියා\nනමෝ විමුත්තානං නමෝ විමුත්තියා', textEn: 'Namatthu buddhānam namatthu bodhiyā\nNamo vimuttānam namo vimuttiyā' },
       { timestampMs: 72000, textSi: 'ඉමං සෝ පරිත්තං කත්වා මෝරෝ චරති ඒසනා', textEn: 'Imam so parittam katvā mōrō carati ēsanā' },
-      { timestampMs: 162000, textSi: 'ඒතේන සච්චේන සුවත්ථි හෝතු!\nමේ සත්‍යානුභාවයෙන් සැමට සෙත් වේවා!', textEn: 'Etena saccena suvatthi hotu!\n(By the power of this truth, may all be well!)' },
     ],
   },
   {
-    id: 'dhajagga_sutta',
-    titleSi: 'ධජග්ග සූත්‍රය',
-    titleEn: 'Dhajagga Sutta',
-    descriptionSi: 'භය දුරු කිරීමේ සූත්‍රය',
-    descriptionEn: 'The Discourse on the Banner',
-    audioUrl: 'https://example.com/audio/dhajagga_sutta.mp3',
-    lines: [],
+    id: 'chanda_piritha', titleSi: 'චන්ද පිරිත', titleEn: 'Chanda Piritha', group: 'palamuveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/d7ladbbd7w01bhe189452/06..mp3?rlkey=ye8z8iwvs5vmzsieiy14oxpnb&st=ktbq3ymu', lines: [],
+  },
+  {
+    id: 'suriya_piritha', titleSi: 'සුරිය පිරිත', titleEn: 'Suriya Piritha', group: 'palamuveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/gjuhlcs7d9026w50vrq62/07..mp3?rlkey=cmno174x7qobs0bom1hntx9t9&st=3vhuiic9', lines: [],
+  },
+  {
+    id: 'dhajagga_piritha', titleSi: 'ධජග්ග පිරිත', titleEn: 'Dhajagga Piritha', group: 'palamuveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/facvbtdfckayzh3717xaj/08..mp3?rlkey=z4y00x6opqm7d8zum1gmxdvw5&st=r9eo0970', lines: [],
+  },
+
+  // ── දෙවෙනි බණවර (Second Banavara) ──
+  {
+    id: 'maha_kassapatthera', titleSi: 'මහා කස්සපත්ථේර බොජ්ඣංග පිරිත', titleEn: 'Maha Kassapatthera Bojjhanga', group: 'deveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/l66knnddzfc9pxhg1zoc3/09..mp3?rlkey=057l7vywhkepyrgbgwrjyql2m&st=vztd5bba', lines: [],
+  },
+  {
+    id: 'girimananda_sutta', titleSi: 'ගිරිමානන්ද සූත්‍රය', titleEn: 'Girimananda Sutta', group: 'deveni_banavara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/us3apoqbdxeuemk9cr8mu/10..mp3?rlkey=z7pore45d74o6gcvakb0ruzns&st=kbzhn567', lines: [],
+  },
+
+  // ── දම්සක් දෙසුම (Damsak Desuma) ──
+  {
+    id: 'dhammacakkappavattana', titleSi: 'ධම්මචක්කප්පවත්තන සුත්තං - දම්සක් පැවතුම් සූත්රය', titleEn: 'Dhammacakkappavattana Sutta', group: 'damsak_desuma',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/eqhamhrh3j0l0dxo9ncdq/11..mp3?rlkey=92eklz9w4bxs0hthvkb3p7p6p&st=7jimxix2', lines: [],
+  },
+  {
+    id: 'sacca_vibhanga', titleSi: 'සච්ච විභංග සූත්‍රය', titleEn: 'Sacca Vibhanga Sutta', group: 'damsak_desuma',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/g8fq86qau0fnbq1752uj0/12..mp3?rlkey=nxqi9q24uidelirobh07a2ntz&st=pdbgllbs', lines: [],
+  },
+
+  // ── අතිරේක දේශනා (Additional Discourses) ──
+  {
+    id: 'kasibharadvaja', titleSi: 'කසී භාරද්වාජ සූත්‍රය', titleEn: 'Kasibharadvaja Sutta', group: 'athireka',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/g5s4lz15itawd2rddxdmh/13..mp3?rlkey=foo02adrnxgu6tasxcimg8av9&st=lys0e5ef', lines: [],
+  },
+  {
+    id: 'alavaka_sutta', titleSi: 'ආලවක සූත්‍රය', titleEn: 'Alavaka Sutta', group: 'athireka',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/wxo0wnjzzel1hs0qhqdee/13..mp3?rlkey=egv689rpm13clwliixyhiqcs4&st=jmg9zgs7', lines: [],
+  },
+  {
+    id: 'vasala_sutta', titleSi: 'වසල සූත්‍රය', titleEn: 'Vasala Sutta', group: 'athireka',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/gyr0ouve0dbomsk42k7ae/14..mp3?rlkey=zxm7jxtmuotaqcibtqt6xq88c&st=nfbb1e79', lines: [],
+  },
+
+  // ── හමාර දේශනා (Concluding Discourses) ──
+  {
+    id: 'isigili', titleSi: 'ඉසිගිලි සූත්‍රය', titleEn: 'Isigili Sutta', group: 'hamara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/o971plycn1peec89eo4cq/17..mp3?rlkey=v67w2seqo6lxo11q26tqcb81d&st=ekzd986a', lines: [],
+  },
+  {
+    id: 'dhammacetiya', titleSi: 'ධම්මචේතිය සූත්‍රය', titleEn: 'Dhammacetiya Sutta', group: 'hamara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/uotdwqtdkao7s1yn2mb9c/15..mp3?rlkey=olxjulgfrazvik097ewt3merj&st=mnfmqmuc', lines: [],
+  },
+  {
+    id: 'atavisi', titleSi: 'අටවිසි පිරිත', titleEn: 'Atavisi Piritha', group: 'hamara',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/waej8j2lk9fik4jk9uxqa/16..mp3?rlkey=vgl9jdpqeyymddjgve1xl3eje&st=tjtnhcgl', lines: [],
   },
 ];
 
 export const sampleVandanaList: Vandana[] = [
+  // ── Udesana (Morning) ──
   {
-    id: 'buddha_vandana',
-    titleSi: 'බුද්ධ වන්දනාව',
-    titleEn: 'Buddha Vandana',
-    category: 'morning',
-    textSi: 'නමෝ තස්ස භගවතෝ අරහතෝ සම්මා සම්බුද්ධස්ස\n\nඉතිපි සෝ භගවා අරහං සම්මා සම්බුද්ධෝ විජ්ජාචරණ සම්පන්නෝ සුගතෝ ලෝකවිදූ අනුත්තරෝ පුරිසදම්ම සාරථි සත්ථා දේවමනුස්සානං බුද්ධෝ භගවාති.',
-    textEn: 'Namo Tassa Bhagavato Arahato Sammā Sambuddhassa\n\nIti pi so Bhagavā Araham Sammā Sambuddho Vijjā-carana Sampanno Sugato Lokavidū Anuttaro Purisa-damma Sārathi Satthā Deva-manussānam Buddho Bhagavā ti.',
+    id: 'u_full_vandana_audio',
+    titleSi: 'උදෑසන බුද්ධ වන්දනාව', titleEn: 'Complete Morning Buddha Vandana', category: 'udesana',
+    audioUrl: 'https://dl.dropboxusercontent.com/scl/fi/wox126iv7deme37jovc1x/udesana-wandanawa.mp3?rlkey=lgo765kr1yzi5qd3hibm4sftm&st=3agucan5',
+    textSi: 'මෙම ශ්‍රව්‍ය ගොනුව මඟින් සම්පූර්ණ උදෑසන බුද්ධ වන්දනාව ශ්‍රවණය කළ හැක. ප්ලේ බොත්තම ඔබා වන්දනාව ආරම්භ කරන්න.',
+    textEn: 'Use this audio to listen to the complete morning Buddha Vandana. Tap the play button below to begin.',
+  },
+  // ── Dawal (Afternoon) ──
+  {
+    id: 'd_buddha_vandana', titleSi: 'බුද්ධ වන්දනාව', titleEn: 'Buddha Vandana', category: 'dawal',
+    textSi: 'නමෝ තස්ස භගවතෝ අරහතෝ සම්මා සම්බුද්ධස්ස...', textEn: 'Namo Tassa Bhagavato...',
   },
   {
-    id: 'dhamma_vandana',
-    titleSi: 'ධම්ම වන්දනාව',
-    titleEn: 'Dhamma Vandana',
-    category: 'morning',
-    textSi: 'ස්වාක්ඛාතෝ භගවතා ධම්මෝ සන්දිට්ඨිකෝ අකාලිකෝ ඒහිපස්සිකෝ ඕපනයිකෝ පච්චත්තං වේදිතබ්බෝ විඤ්ඤූහීති.',
-    textEn: 'Svākkhāto Bhagavatā Dhammo Sanditthiko Akāliko Ehipassiko Opanayiko Paccattam Veditabbo Viññūhī ti.',
+    id: 'd_ahara_puja', titleSi: 'ආහාර පූජාව', titleEn: 'Offering Food', category: 'dawal',
+    textSi: 'අධිවාසෙතු නෝ භන්තේ භෝජනං පරිකප්පිතං...', textEn: 'Adhivāsetu no bhante bhojanaṃ parikappitaṃ...',
+  },
+
+  // ── Sawasa (Evening) ──
+  {
+    id: 's_buddha_vandana', titleSi: 'බුද්ධ වන්දනාව', titleEn: 'Buddha Vandana', category: 'sawasa',
+    textSi: 'නමෝ තස්ස භගවතෝ...', textEn: 'Namo Tassa Bhagavato...',
   },
   {
-    id: 'sangha_vandana',
-    titleSi: 'සංඝ වන්දනාව',
-    titleEn: 'Sangha Vandana',
-    category: 'morning',
-    textSi: 'සුපටිපන්නෝ භගවතෝ සාවකසංඝෝ උජුපටිපන්නෝ භගවතෝ සාවකසංඝෝ ඤායපටිපන්නෝ භගවතෝ සාවකසංඝෝ සාමීචිපටිපන්නෝ භගවතෝ සාවකසංඝෝ.',
-    textEn: 'Supatipanno Bhagavato Sāvakasangho Ujupatipanno Bhagavato Sāvakasangho Ñāyapatipanno Bhagavato Sāvakasangho Sāmīcipatipanno Bhagavato Sāvakasangho.',
+    id: 's_gilanpasa', titleSi: 'ගිලන්පස පූජාව', titleEn: 'Offering Gilanpasa', category: 'sawasa',
+    textSi: 'අධිවාසෙතු නෝ භන්තේ ගිලාන පච්චයං ඉමං...', textEn: 'Adhivāsetu no bhante gilāna paccayaṃ imaṃ...',
   },
+
+  // ── Bodhi Pujawa ──
   {
-    id: 'five_precepts',
-    titleSi: 'පන්සිල්',
-    titleEn: 'Five Precepts',
-    category: 'morning',
-    textSi: '1. පාණාතිපාතා වේරමණී සික්ඛාපදං සමාදියාමි\n2. අදින්නාදානා වේරමණී සික්ඛාපදං සමාදියාමි\n3. කාමේසුමිච්ඡාචාරා වේරමණී සික්ඛාපදං සමාදියාමි\n4. මුසාවාදා වේරමණී සික්ඛාපදං සමාදියාමි\n5. සුරාමේරයමජ්ජපමාදට්ඨානා වේරමණී සික්ඛාපදං සමාදියාමි',
-    textEn: '1. Pāṇātipātā veramaṇī sikkhāpadaṃ samādiyāmi\n2. Adinnādānā veramaṇī sikkhāpadaṃ samādiyāmi\n3. Kāmesumicchācārā veramaṇī sikkhāpadaṃ samādiyāmi\n4. Musāvādā veramaṇī sikkhāpadaṃ samādiyāmi\n5. Surāmerayamajjapamādaṭṭhānā veramaṇī sikkhāpadaṃ samādiyāmi',
+    id: 'bodhi_vandana', titleSi: 'බෝධි වන්දනාව', titleEn: 'Bodhi Vandana', category: 'bodhi',
+    textSi: 'යස්ස මූලේ නිසින්නෝව සබ්බාරි විජයං අකා\nපත්තෝ සබ්බඤ්ඤුතං සත්ථා වන්දේ තං බෝධි පාදපං.',
+    textEn: 'Yassa mūle nisinnōva sabbāri vijayam akā\nPattō sabbaññutam satthā vande tam bōdhi pādapam.',
+  },
+
+  // ── Sathbudu Wandanawa ──
+  {
+    id: 'sathbudu_vandana', titleSi: 'සත්බුදු වන්දනාව', titleEn: 'Sathbudu Vandana', category: 'sathbudu',
+    textSi: 'විපස්සිස්ස නමත්ථු චක්ඛුමන්තස්ස සිරිමතෝ\nසිඛිස්සපි නමත්ථු සබ්බභූතානුකම්පිනෝ...',
+    textEn: 'Vipassissa namatthu cakkhumantassa sirimatō\nSikhissapi namatthu sabbabhūtānukampinō...',
   },
   {
     id: 'somawathi',

@@ -1,0 +1,1 @@
+﻿src/contexts/DownloadContext.tsx(7,30): error TS2339: Property 'documentDirectory' does not exist on type 'typeof import("C:/Users/mujit/Documents/webPlayer/DamSuwanda/node_modules/expo-file-system/build/index")'.

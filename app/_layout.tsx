@@ -5,7 +5,26 @@ import { useFonts } from 'expo-font';
 import { LanguageProvider } from '../src/contexts/LanguageContext';
 import { FavoritesProvider } from '../src/contexts/FavoritesContext';
 import { DownloadProvider } from '../src/contexts/DownloadContext';
-import { Colors } from '../src/theme';
+import { TextSizeProvider } from '../src/contexts/TextSizeContext';
+import { ThemeProvider, useTheme } from '../src/contexts/ThemeContext';
+
+function ThemedStack() {
+  const { colors } = useTheme();
+  return (
+    <>
+      <StatusBar style="light" />
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: colors.background },
+          headerTintColor: colors.primary,
+          headerTitleStyle: { fontWeight: '600', fontSize: 20 },
+          contentStyle: { backgroundColor: colors.background },
+          animation: 'slide_from_right',
+        }}
+      />
+    </>
+  );
+}
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -17,20 +36,15 @@ export default function RootLayout() {
 
   return (
     <LanguageProvider>
-      <FavoritesProvider>
-        <DownloadProvider>
-          <StatusBar style="light" />
-          <Stack
-            screenOptions={{
-              headerStyle: { backgroundColor: Colors.background },
-              headerTintColor: Colors.primaryGold,
-              headerTitleStyle: { fontWeight: '600', fontSize: 20 },
-              contentStyle: { backgroundColor: Colors.background },
-              animation: 'slide_from_right',
-            }}
-          />
-        </DownloadProvider>
-      </FavoritesProvider>
+      <ThemeProvider>
+        <TextSizeProvider>
+          <FavoritesProvider>
+            <DownloadProvider>
+              <ThemedStack />
+            </DownloadProvider>
+          </FavoritesProvider>
+        </TextSizeProvider>
+      </ThemeProvider>
     </LanguageProvider>
   );
 }

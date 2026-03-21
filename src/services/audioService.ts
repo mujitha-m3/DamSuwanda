@@ -1,4 +1,4 @@
-import { Audio, AVPlaybackStatus } from 'expo-av';
+import { Audio, AVPlaybackStatus, InterruptionModeIOS, InterruptionModeAndroid } from 'expo-av';
 
 export type AudioStatus = {
   isPlaying: boolean;
@@ -44,8 +44,13 @@ export class AudioService {
   async load(source: { url?: string; localUri?: string }) {
     await this.unload();
     await Audio.setAudioModeAsync({
+      allowsRecordingIOS: false,
       playsInSilentModeIOS: true,
       staysActiveInBackground: true,
+      interruptionModeIOS: InterruptionModeIOS.DuckOthers,
+      shouldDuckAndroid: true,
+      interruptionModeAndroid: InterruptionModeAndroid.DuckOthers,
+      playThroughEarpieceAndroid: false,
     });
 
     const { sound } = await Audio.Sound.createAsync(

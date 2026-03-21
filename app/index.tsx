@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { View, Text, Animated, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, Text, Animated, StyleSheet, ActivityIndicator, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useLanguage } from '../src/contexts/LanguageContext';
 import { Colors, Typography } from '../src/theme';
@@ -28,9 +28,9 @@ export default function SplashScreenPage() {
   return (
     <View style={styles.container}>
       <Animated.View style={[styles.content, { opacity: fadeAnim, transform: [{ scale: scaleAnim }] }]}>
-        {/* Dharma Wheel */}
-        <View style={styles.iconCircle}>
-          <Text style={styles.wheelIcon}>☸</Text>
+        {/* Logo */}
+        <View style={styles.logoContainer}>
+          <Image source={require('../assets/logo.png')} style={styles.logoImage} resizeMode="contain" />
         </View>
         <Text style={styles.title}>Dam Suvanda</Text>
         <Text style={styles.titleSi}>දම් සුවඳ</Text>
@@ -44,15 +44,12 @@ export default function SplashScreenPage() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: Colors.background, justifyContent: 'center', alignItems: 'center' },
   content: { alignItems: 'center' },
-  iconCircle: {
-    width: 120, height: 120, borderRadius: 60,
-    borderWidth: 2, borderColor: Colors.primaryGold,
-    justifyContent: 'center', alignItems: 'center',
+  logoContainer: {
     shadowColor: Colors.primaryGold, shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.3, shadowRadius: 30, elevation: 10,
+    shadowOpacity: 0.5, shadowRadius: 40, elevation: 15,
   },
-  wheelIcon: { fontSize: 64, color: Colors.primaryGold },
-  title: { ...Typography.headingLarge, fontSize: 36, letterSpacing: 2, marginTop: 32 },
+  logoImage: { width: 240, height: 240, borderRadius: 20 },
+  title: { ...Typography.headingLarge, fontSize: 36, letterSpacing: 2, marginTop: 24 },
   titleSi: { fontFamily: 'NotoSansSinhala-Bold', fontSize: 24, color: Colors.accentGold, marginTop: 4 },
   tagline: { ...Typography.bodyMedium, color: 'rgba(245,245,245,0.7)', fontStyle: 'italic', letterSpacing: 1.5, marginTop: 16 },
 });
