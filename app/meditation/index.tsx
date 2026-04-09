@@ -12,7 +12,9 @@ export default function MeditationScreen() {
   const { scaled } = useTextSize();
   const { colors } = useTheme();
   const router = useRouter();
-  const audioTopics = meditationTopics.filter((m) => m.category === 'audio');
+  const audioTopics = meditationTopics.filter((m) => 
+    ['audio', 'guide', 'bojjhanga', 'anussati'].includes(m.category)
+  );
 
   return (
     <>

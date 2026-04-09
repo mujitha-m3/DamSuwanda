@@ -9,7 +9,9 @@ import { localizedText } from '../../src/types';
 export default function MeditationGuidanceScreen() {
   const { locale, t } = useLanguage();
   const router = useRouter();
-  const guideTopics = meditationTopics.filter((m) => m.category === 'guide');
+  const guideTopics = meditationTopics.filter((m) => 
+    m.category === 'guide' || m.category === 'bojjhanga' || m.category === 'anussati'
+  );
 
   return (
     <>
